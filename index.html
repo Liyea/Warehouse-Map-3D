@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>SMDC EXC-MES | 立體倉儲系統</title>
+  <title>SMDC EXC-MES | 立體倉儲地圖</title>
   <link rel="shortcut icon" href="TemplateData/favicon.ico">
   <link rel="stylesheet" href="TemplateData/style.css">
 </head>
@@ -29,8 +29,8 @@
         <option value=2>English</option>
         <option value=3>日本語</option>
         <option value=4>Thai</option>
-        <option value=5>Vietnamese</option>
-      </select> -->
+        <option value=5>Vietnamese</option> -->
+      </select>
     </div>
   </div>
   <script>
@@ -67,16 +67,16 @@
     }
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/WarehouseMap3D_ver_0.2.3_Build2.loader.js";
+    var loaderUrl = buildUrl + "/WarehouseMap3D_ver_0.2_Build2_compressed.loader.js";
     var config = {
-      dataUrl: buildUrl + "/WarehouseMap3D_ver_0.2.3_Build2.data",
-      frameworkUrl: buildUrl + "/WarehouseMap3D_ver_0.2.3_Build2.framework.js",
-        codeUrl: buildUrl + "/WarehouseMap3D_ver_0.2.3_Build2.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "NTTData",
-        productName: "立體倉儲系統",
-        productVersion: "0.2.3",
-        showBanner: unityShowBanner,
+      dataUrl: buildUrl + "/WarehouseMap3D_ver_0.2_Build2_compressed.data.unityweb",
+      frameworkUrl: buildUrl + "/WarehouseMap3D_ver_0.2_Build2_compressed.framework.js.unityweb",
+      codeUrl: buildUrl + "/WarehouseMap3D_ver_0.2_Build2_compressed.wasm.unityweb",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "NTTData",
+      productName: "WarehouseMapSystem",
+      productVersion: "0.2",
+      showBanner: unityShowBanner,
     };
 
     // By default, Unity keeps WebGL canvas render target size matched with
@@ -130,7 +130,7 @@
     document.body.appendChild(script);
 
     function changeLanguage(langID) {
-      console.log('Language ID: ' + langID);
+      console.log('Language ID: '+langID);
       gameInstance.SendMessage('Factory', 'SelectLocale', langID);
     }
   </script>

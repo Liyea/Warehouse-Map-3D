@@ -1,12 +1,10 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="NTTData.MES.MesSettings" preserve="all" />
-    <type fullname="NTTData.MES.WMS.MapObjectDesigner" preserve="all" />
+    <type fullname="NTTData.MES.WMS.WarehouseMap3D.Shelf" preserve="all" />
     <type fullname="NTTData.MES.WMS.WarehouseMap3D.ShelfDesinger" preserve="all" />
-    <type fullname="NTTData.MES.WMS.WarehouseMap3D.StorageLocation" preserve="all" />
     <type fullname="Outline" preserve="all" />
     <type fullname="NTTData.MES.ResourceApiPaths" preserve="nothing" serialized="true" />
-    <type fullname="NTTData.MES.StorageSetting" preserve="nothing" serialized="true" />
     <type fullname="NTTData.MES.WMSApiPaths" preserve="nothing" serialized="true" />
     <type fullname="NTTData.MES.WarehouseMap3DApiPath" preserve="nothing" serialized="true" />
     <type fullname="NTTData.MES.WarehouseMapApiPath" preserve="nothing" serialized="true" />
@@ -35,7 +33,6 @@
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
-    <type fullname="UnityEngine.Mesh" preserve="all" />
     <type fullname="UnityEngine.MeshFilter" preserve="all" />
     <type fullname="UnityEngine.MeshRenderer" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
